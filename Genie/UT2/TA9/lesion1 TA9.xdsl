@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network2" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Estudiante">
+			<state id="Peter" />
+			<state id="John" />
+			<state id="Alison" />
+			<state id="Nicole" />
+			<probabilities>0.3 0.1 0.4 0.2</probabilities>
+		</cpt>
+		<cpt id="Deporte">
+			<state id="Tenis" />
+			<state id="Atletismo" />
+			<state id="Futbol" />
+			<probabilities>0.6 0.1 0.3</probabilities>
+		</cpt>
+		<deterministic id="Lesion">
+			<state id="HuesoRoto" />
+			<state id="LigamentoDanado" />
+			<state id="Otro" />
+			<parents>Estudiante Deporte</parents>
+			<resultingstates>Otro Otro HuesoRoto Otro LigamentoDanado HuesoRoto LigamentoDanado LigamentoDanado LigamentoDanado LigamentoDanado LigamentoDanado LigamentoDanado</resultingstates>
+		</deterministic>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.1.3724.0 ACADEMIC" name="Lesion1">
+			<node id="Estudiante">
+				<name>Estudiante</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>83 39 276 142</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="Lesion">
+				<name>Lesion</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>108 218 297 319</position>
+				<barchart active="true" width="174" height="93" />
+			</node>
+			<textbox>
+				<caption>Peter no tiene chance de huesos rotos, 30% para ligamento dañado, y 70% para otros. \nAlison solamente puede tener ligamento dañado\nNicole NO puede sufrir de ligamento dañado\n¿cómo se ve el sistema en estado inicial?\n¿Qué pasa cuando hacemos observaciones?\nLa probabilidad inicial marginal para ligamento dañado es 50%. Si descubrimos que la lesión es un ligamento dañado, ¿cuáles son las probabilidades para cada alumno?\n\n\n</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>470 182 758 336</position>
+			</textbox>
+			<node id="Deporte">
+				<name>Deporte</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>278 48 467 149</position>
+				<barchart active="true" width="174" height="93" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

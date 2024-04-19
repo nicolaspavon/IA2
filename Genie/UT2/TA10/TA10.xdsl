@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network3" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="PCI">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.03 0.97</probabilities>
+		</cpt>
+		<cpt id="TG">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.02 0.98</probabilities>
+		</cpt>
+		<cpt id="Pantalla">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="Teclado">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="CPU">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.001 0.999</probabilities>
+		</cpt>
+		<cpt id="Mother">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="HD">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.01 0.99</probabilities>
+		</cpt>
+		<deterministic id="Sistema">
+			<state id="Falla" />
+			<state id="No_falla" />
+			<parents>PCI TG Pantalla Teclado CPU Mother HD</parents>
+			<resultingstates>Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla Falla No_falla</resultingstates>
+		</deterministic>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.1.3724.0 ACADEMIC" name="TA9_EJ2">
+			<node id="Sistema">
+				<name>Sistema</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>320 80 426 145</position>
+				<barchart active="true" />
+			</node>
+			<node id="HD">
+				<name>HD</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>168 163 205 186</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Mother">
+				<name>Mother</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>130 289 179 319</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="CPU">
+				<name>CPU</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>166 431 207 456</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="PCI">
+				<name>PCI</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>642 185 679 208</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="TG">
+				<name>TG</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>592 310 629 333</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Pantalla">
+				<name>Pantalla</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>520 420 572 452</position>
+				<barchart active="true" />
+			</node>
+			<node id="Teclado">
+				<name>Teclado</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>340 420 394 453</position>
+				<barchart active="true" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
